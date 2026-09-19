@@ -1,0 +1,39 @@
+import random
+def num_game():
+    while True:
+        b=random.randint(1,11)
+        attempts=0
+        while True:
+            a=int(input("enter any num btw 0 to 10:"))
+            attempts+=1
+            if b==a:
+                print("right")
+                print("no of attempts y taken:",attempts)
+                print("you won the game")
+                if attempts==1:
+                    print("points:10/10")
+                elif attempts==2:
+                    print("points:8/10")
+                else: 
+                    print("points:5/10")
+                break
+            elif b>a:
+                print("too low")    
+            else:
+                print("too high")
+
+        a=input("do u want to play again:YES/NO:")
+        if a.lower()=='yes':
+            continue
+        else:
+            print("thanks for playing")
+            break                  
+num_game()        
+                
+
+    
+                
+            
+                
+         
+            
